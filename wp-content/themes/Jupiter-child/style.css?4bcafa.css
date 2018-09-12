@@ -1,0 +1,309 @@
+/*
+Theme Name:     Jupiter Child Theme
+Theme URI: 		http://themeforest.net/user/artbees
+Description:    Child theme for the Jupiter theme 
+Author:         d1@blank
+Theme URI: 		http://themeforest.net/user/artbees
+Template:       jupiter
+Version:        4.0.9
+*/
+
+/*
+colors: 
+blue from logo #024da1
+prev blue #034ea2
+new blue: #1768bf
+yellow from logo: #fec10d
+selected yellow: #dfc061 
+dark header text: 
+*/
+
+
+.home .edge-slide-content {left:15px!important;position:absolute;top:125px!important;}
+
+/*es spanish side*/
+.color1{background:#43474D;padding:40px 17px 20px 12px;
+border-left:15px #fff solid;
+border-right:14px #fff solid;}/*faux to bring sides in for alignment*/
+.color2{background:#f0f0f0;border-left:15px #fff solid;
+border-right:14px #fff solid;padding:40px 17px 20px 12px;}
+section#text-5 .textwidget {margin-top:-25px!important;margin-left:-10px;}
+/*language*/
+.en-es {float:right;}
+.en-es p{font-size:0.8em!important;}
+
+/*---HEADER---*/
+#menu-header {
+	position:absolute;
+	top:35px;
+	right:15px;
+}
+#mk-header-social {margin-right:13px;}
+/*#popeindc*/
+.menu-item-6706 a {font-weight:600;text-transform:uppercase;font-size:0.9em!important;}
+
+/* top navigation w/ contact*/
+#menu-header {font-weight:400;}
+#menu-header li a:hover {color:#034ea2!important;}
+
+/*odd spacing glitch fix from respsonsive menu
+#mk-responsive-wrap {
+	overflow-y: inherit;
+}*/
+#menu-main-navigation {margin-top:;}
+#menu-main-navigation li a{padding-left:10%!important;}
+#menu-main-navigation li a:hover{color:#1768bf;}
+/*temp faux fix for dropdown top border*/
+ul.sub-menu {border-top:5px solid #1768bf!important;}
+
+/**/
+ul.sub-menu ul.sub-menu li{background:#3f3f3f!important;}
+
+/* HOMEpage full width edge slider description, captions */
+.edge-title {
+	text-transform:uppercase!important;
+	line-height:1.25em!important;
+	margin-bottom:20px!important;
+}
+.edge-desc {font-size:1.15em!important;line-height:1.25em!important;}
+.edge-slide-content {
+	padding:15px;
+	background-color:rgba(0, 0, 0, 0.5);
+	margin-top:230px!important;
+	/*position:absolute!important;
+	top:230px;*/
+}
+/*slide button using theme style*/
+.edge-buttons .mk-button-align a {color:#fff;border:1px solid #fff!important;}
+/*more button on homepage*/
+.mk-button-align .small, .mag-one-column .mk-button-align .custom{border:1px solid!important; font-size:10px; margin-top:-13px;}
+.mk-button-align .small:hover, .mag-one-column .mk-button-align .custom:hover {background:#1768bf!important;}
+
+/*wp captions w/in body text*/
+p.wp-caption-text {
+	text-align:left;
+	font-size:0.8em;
+	line-height:1.45em;
+	font-style:italic;
+	padding:7px!important;
+	border-top:1px solid #dedede;
+	margin-top:5px!important;
+}
+p strong {font-weight:600;}
+/*body text link */
+.mk-text-block a {font-weight:400;}
+
+/*center with shield span 2 column*/
+.cntr-call {
+	/*width:200%;fix needed for mobile*/
+	/*height:95px;*/
+	padding:0!important;margin-bottom:10px!important;
+}
+/*.cntr-call img {margin:0 20px 0 0;}*/
+.cntr-call p:first-of-type {font-size:22px;line-height:1.25em;font-weight:400;margin-bottom:5px;}
+.cntr-call p:last-of-type {font-size:16px; margin-bottom:0;}
+
+.hmpg-fff p, .hmpg-fff a {color:#fff;}
+/*homepage accordion on dark bg no longer used
+.hmpg .mk-accordion-tab, .hmpg .mk-accordion-pane p {
+	color:#fff!important;
+	background:#58595B!important;
+}*/
+
+/*you are here sub nav*/
+.sidebar-wrapper .widget_nav_menu .current-menu-item a{background:#d1dfef!important;color:#4d4d4d!important;}
+
+/*sub nav dropdown for subpgs ref hm site*/
+.vc_wp_custommenu .sub-menu a, .sidebar-wrapper .sub-menu a {	
+	padding-left:15px!important;
+	font-size:0.8em;	line-height:0.9em;
+	font-weight:600!important;
+	text-transform:none!important;
+}
+
+/*lighten up border for custom menus*/
+.widget_nav_menu #menu-homepg-pope-at-cua {border:1px solid rgba(255, 255, 255, 0.3);}
+.widget_nav_menu #menu-homepg-pope-at-cua li {border-bottom:1px solid rgba(255, 255, 255, 0.3);}
+
+.widget_nav_menu #menu-homepg-the-papal-mass {border:1px solid rgba(0, 0, 0, 0.2);}
+.widget_nav_menu #menu-homepg-the-papal-mass li {border-bottom:1px solid rgba(0, 0, 0, 0.2);}
+
+.widget_nav_menu a {font-size:13px;font-weight:600;text-transform:uppercase!important;}
+
+/*papal mass rev slider*/
+.lightbgblack45 {height:400px;display:none;}/*force height to fill bg color*/
+
+
+/*papal mass, recent blog headline*/
+.home h3.mk-fancy-title, .es-in /*spanish home*/ {
+	margin-bottom:0;
+	font-weight:700!important;
+	letter-spacing:0.02em!important;
+}
+/*pope at cua mid section visually to match papal headline*/
+.hmpg-fff h3.mk-fancy-title {font-weight:600!important;color:#ebebeb!important;}
+
+/*faux page titles*/
+h3.mk-fancy-title.sub, h2.blog-single-title {
+	color:#1768bf!important;
+	font-weight:700!important;
+	margin-bottom:10px;
+	text-transform:none!important;
+}
+
+/*welcome page fix text wrapping image on mobile*/
+@media handheld, only screen and (max-width: 700px) {
+#mk-page-id-6721 p:nth-child(3) {clear:right;}
+}
+
+/*---TABLE---*/
+.mk-fancy-table.table-style1 td {
+  text-align:left; font-weight:400;
+}
+.mk-fancy-table.table-style1 td:first-child {
+   width:42%;
+}
+
+/*home page blog divider*/
+.mk-divider.double_dot .divider-inner {
+  height: 5px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+/*NEWS BLOG*/
+.mk-thumbnail-content-container {padding:5px 15px 0 15px!important;}
+.mk-thumbnail-content-container h3.the-title {margin:0;font-size:17px!important;}
+
+/*news blog sidebar categories*/
+#categories-2, #categories-3 {background:#f7f7f7;padding:10px 10px 10px 15px;}
+#categories-2 .widgettitle, #categories-3 .widgettitle {
+  color:#1768bf!important;
+  margin-bottom:0;
+  text-transform:none!important;}
+#categories-2 ul li a, #categories-3 ul li a {font-size:.9em!important;margin:0;padding:0!important;}
+
+
+/*BLOG showcase*/
+.blog-showcase-extra-info time {
+	border-top:1px solid;
+	border-bottom:1px solid;
+	font-weight:600;
+	color:#2e2e2e;
+}
+.blog-showcase-extra-info time a {
+	font-size:12px;
+	color:#2e2e2e;
+}
+.blog-showcase-extra-info .the-excerpt {
+	font-size:12px;
+	line-height:1.66em;
+}
+a.blog-showcase-title {
+	text-transform:uppercase;
+	color:#404040;/*was#777*/
+	line-height:1.25em!important;
+}
+a.blog-showcase-more {
+	text-transform:capitalize;font-weight:400;
+}
+
+/*showcase used at bottom of pgs*/
+.mk-blog-showcase {width:102%;}
+
+/*currently being used as sub heading and it really should be an h2*/
+h6 {margin-bottom:15px;font-size:17px!important;}
+
+/*custom list*//*list title*/
+h3.mk-shortcode-heading {
+	margin-top:15px!important;
+	margin-bottom:10px!important;
+}
+h3.mk-shortcode-heading span {
+	font-size:16px!important;
+	color:#575757!important;
+}
+.mk-list-styles ul li {font-weight:400;}
+
+/*bullet list*/
+.mk-text-block ul {margin-left:0;margin-top:-12px;}
+.mk-text-block ul li {margin-bottom:7px;}
+
+/*video*/
+.widget_video .widgettitle, /*in sidebar*/
+.mk-text-block h3.mk-fancy-title span /*video page*/,
+.sidebar-wrapper .widget_text .widgettitle {border-top:1px solid #2e2e2e;
+	color:#777!important;font-weight:700!important;
+	line-height:1.25em!important;
+  letter-spacing:0.02em!important;padding-top:5px;
+  font-size:13px!important;  margin-bottom:7px;display:block;
+}
+
+
+
+/*remove author*/
+.mk-blog-author {
+	display:none!important;
+}
+/*remove posted in cat*/
+.mk-categories, .mk-post-cat {display:none!important;}
+/*blog item border*/
+article.mk-blog-thumbnail-item {border:1px solid rgba(0, 0, 0, 0.1);width:99%;}
+
+.mk-col-1-2:first-of-type {padding-left:0!important;}
+
+/*---GALLERY---*/
+/*filter links*/
+#mk-filter-portfolio {text-transform:uppercase;}
+/*gallery hover color*/
+.mk-portfolio-item.slidebox-hover .portfolio-meta {
+	background-color:#1768bf;
+}
+/* hover title gallery grid */
+.mk-portfolio-item.slidebox-hover .the-title, .gallery-title /*masonry grid used on main sections*/ {
+	padding:0;
+	font-size:12px!important;
+	font-weight:600!important;
+	line-height:15px!important;
+	letter-spacing:0;
+}
+.mk-portfolio-item.slidebox-hover .portfolio-categories span, .mk-portfolio-item.slidebox-hover .portfolio-date {
+	line-height:15px;
+	font-size:12px;
+	letter-spacing:0;
+}
+/*portfolio carousel permalinks*/
+.project-load {display:none!important;}
+
+
+/*FOOTER*/
+/*footer logo*/
+#text-4 {float:left;width:45%;margin-right:20px;}
+/*pope at cua menu footer fix wrapping*/
+#nav_menu-3 {clear:both;}
+
+#mk-footer .sub-menu {display:block!important;font-weight:300!important;}
+#mk-footer .sub-menu li a {
+	color:#cfcfcf!important;
+	font-weight:300!important;
+	text-transform:none!important;
+	padding:0!important;
+	font-size:11px;line-height:1.4em;
+}
+#mk-footer .sub-menu li a:hover {color:#1768bf!important;}
+.widget_nav_menu .menu-item-has-children {}/*?*/
+/*remove open/close effect on footer navigation*/
+body #mk-footer .widget-sub-navigation ul,
+body #mk-footer .widget-sub-navigation ul li,
+body #mk-footer .widget_nav_menu ul,
+body #mk-footer .widget_nav_menu ul li {
+ display: block !important;
+ height: 100% !important;
+}
+
+.mk-footer-copyright {margin-left:20px;}
+
+/*credit*/
+.creditbyblank {color:#79797A;}
+.creditbyblank a:link, .creditbyblank a:visited {color:#79797A!important;}
+.creditbyblank a:hover {color:#1768bf!important;}
